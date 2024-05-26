@@ -1,0 +1,35 @@
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+name: "Orwell's Firewall"
+author: "Bowen"
+category: web
+description: |
+    Our operatives have infiltrated the telescreens dispersed throughout Britain, unlocking the Party's clandestine portal. Can you navigate its depths and unveil the Party's ulterior intentions? Dive in, and uncover the truth behind their façade.
+value: 500
+type: dynamic
+
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+# Optional settings
+
+# connection_info is used to provide a link, hostname, or instructions on how to connect to a challenge
+# connection_info: nc hostname 12345
+
+# Flags specify answers that your challenge use. You should generally provide at least one.
+# Can be removed if unused
+# Accepts strings or dictionaries of CTFd API data
+flags:
+    # A static case sensitive flag
+    - LNC2024{w3lc0m3_70_7h3_br07h3rh00d}
+
+# Topics are used to help tell what techniques/information a challenge involves
+# They are generally only visible to admins
+# Accepts strings
+topics:
+    - web exploitation
+    - server side template injection
